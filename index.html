@@ -3,117 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Hub</title>
+    <title>SportZone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main class="container">
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">⚡</div>
+            <div>
+                <h2>SportZone</h2>
+                <span>Live Your Game</span>
+            </div>
+        </div>
+
+        <nav>
+            <a class="active" href="#">⌂ <span>Home</span></a>
+            <a href="#">◉ <span>Live Scores</span></a>
+            <a href="#">🏆 <span>Matches</span></a>
+            <a href="#">📊 <span>Statistics</span></a>
+            <a href="#">📰 <span>News</span></a>
+            <a href="#">👤 <span>Profile</span></a>
+        </nav>
+
+        <div class="side-bottom">
+            <p>Never miss<br>the action.</p>
+            <button>Explore Sports →</button>
+        </div>
+    </aside>
+
+    <main class="content">
 
         <section class="hero">
-            <div class="hero-content">
-                <span class="tag">SPORTS HUB</span>
-                <h1>Level Up<br>Your Game</h1>
-                <p>Track matches, teams and performance all in one place.</p>
-                <button>Explore Sports →</button>
+            <div class="hero-text">
+                <span class="tag">LIVE SPORTS</span>
+                <h1>Every Game.<br><strong>Every Moment.</strong></h1>
+                <p>
+                    Follow live scores, upcoming matches,
+                    player statistics and the latest sports news.
+                </p>
+                <button class="primary-btn">Watch Live →</button>
             </div>
+
             <div class="hero-ball">⚽</div>
         </section>
 
-        <section class="card explore">
-            <span class="icon">🏆</span>
-            <h2>Explore Sports</h2>
-            <p>Discover football, cricket, basketball and more.</p>
-            <a href="#">View Sports →</a>
-        </section>
+        <div class="top-grid">
 
-        <section class="card teams">
-            <div class="card-top">
-                <span class="icon">👥</span>
-                <span class="status">ACTIVE</span>
-            </div>
-            <h2>Manage Your Teams</h2>
-            <p>Create teams and keep your players organized.</p>
-
-            <div class="team-list">
-                <span>⚽ Tigers FC</span>
-                <span>🏀 City Hoopers</span>
-                <span>🏏 Warriors XI</span>
-            </div>
-        </section>
-
-        <section class="card schedule">
-            <h2>Upcoming Matches</h2>
-
-            <div class="match">
-                <div>
-                    <strong>⚽ Tigers FC</strong>
-                    <small>vs Lions United</small>
+            <section class="live-card">
+                <div class="card-title">
+                    <h2>Live Scores</h2>
+                    <a href="#">View All →</a>
                 </div>
-                <span>6:30 PM</span>
-            </div>
 
-            <div class="match">
-                <div>
-                    <strong>🏏 Warriors XI</strong>
-                    <small>vs Kings CC</small>
+                <div class="score">
+                    <div class="team">
+                        <span>🔴</span>
+                        <b>Manchester</b>
+                    </div>
+                    <strong>2 - 1</strong>
+                    <div class="team">
+                        <span>🔵</span>
+                        <b>Chelsea</b>
+                    </div>
                 </div>
-                <span>8:00 PM</span>
-            </div>
 
-            <div class="match">
-                <div>
-                    <strong>🏀 City Hoopers</strong>
-                    <small>vs Bulls</small>
+                <div class="score">
+                    <div class="team">
+                        <span>🇮🇳</span>
+                        <b>India</b>
+                    </div>
+                    <strong>248/6</strong>
+                    <div class="team">
+                        <span>🇦🇺</span>
+                        <b>Australia</b>
+                    </div>
                 </div>
-                <span>9:15 PM</span>
-            </div>
-        </section>
 
-        <section class="stats">
-            <div class="stat-text">
-                <span class="tag">YOUR PERFORMANCE</span>
-                <h2>Play Better.<br>Perform Better.</h2>
-                <p>Monitor your progress with simple sports statistics.</p>
-            </div>
-
-            <div class="chart">
-                <div class="chart-value">86%</div>
-                <div class="bars">
-                    <span style="height:35%"></span>
-                    <span style="height:55%"></span>
-                    <span style="height:45%"></span>
-                    <span style="height:75%"></span>
-                    <span style="height:65%"></span>
-                    <span style="height:90%"></span>
-                    <span style="height:82%"></span>
+                <div class="score">
+                    <div class="team">
+                        <span>🟡</span>
+                        <b>Lakers</b>
+                    </div>
+                    <strong>108 - 104</strong>
+                    <div class="team">
+                        <span>🟢</span>
+                        <b>Celtics</b>
+                    </div>
                 </div>
-                <div class="days">
-                    <span>M</span>
-                    <span>T</span>
-                    <span>W</span>
-                    <span>T</span>
-                    <span>F</span>
-                    <span>S</span>
-                    <span>S</span>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="card performance">
+            <section class="player-card">
+                <span>PLAYER OF THE WEEK</span>
+                <div class="player">
+                    <div class="player-avatar">🏃</div>
+                    <div>
+                        <h2>Arjun Kumar</h2>
+                        <p>Forward • Football</p>
+                    </div>
+                </div>
+
+                <div class="player-stats">
+                    <div>
+                        <strong>12</strong>
+                        <small>Goals</small>
+                    </div>
+                    <div>
+                        <strong>7</strong>
+                        <small>Assists</small>
+                    </div>
+                    <div>
+                        <strong>9.4</strong>
+                        <small>Rating</small>
+                    </div>
+                </div>
+
+                <button>View Profile →</button>
+            </section>
+
+        </div>
+
+        <div class="middle-grid">
+
+            <section class="matches card">
+                <div class="card-title">
+                    <h2>Upcoming Matches</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <div class="match">
+                    <div>
+                        <span>⚽</span>
+                        Arsenal <b>vs</b> Chelsea
+                    </div>
+                    <small>Today • 7:30 PM</small>
+                </div>
+
+                <div class="match">
+                    <div>
+                        <span>🏏</span>
+                        India <b>vs</b> Pakistan
+                    </div>
+                    <small>Tomorrow • 2:00 PM</small>
+                </div>
+
+                <div class="match">
+                    <div>
+                        <span>🏀</span>
+                        Lakers <b>vs</b> Warriors
+                    </div>
+                    <small>Sep 28 • 9:00 PM</small>
+                </div>
+            </section>
+
+            <section class="leagues card">
+                <div class="card-title">
+                    <h2>Top Leagues</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <div class="league-grid">
+                    <div>
+                        <span>⚽</span>
+                        <b>Premier League</b>
+                    </div>
+                    <div>
+                        <span>🏎️</span>
+                        <b>Formula 1</b>
+                    </div>
+                    <div>
+                        <span>🏀</span>
+                        <b>NBA</b>
+                    </div>
+                    <div>
+                        <span>🏏</span>
+                        <b>IPL</b>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="bottom-grid">
+
+            <section class="news card">
+                <div class="card-title">
+                    <h2>Latest News</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <article>
+                    <div class="news-img">⚽</div>
+                    <div>
+                        <h3>Championship race heats up</h3>
+                        <p>Latest updates from the football world.</p>
+                        <small>2 hours ago</small>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="news-img">🏏</div>
+                    <div>
+                        <h3>India announces match squad</h3>
+                        <p>New players join the upcoming series.</p>
+                        <small>4 hours ago</small>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="news-img">🏀</div>
+                    <div>
+                        <h3>Another exciting NBA night</h3>
+                        <p>Big performances from the league stars.</p>
+                        <small>6 hours ago</small>
+                    </div>
+                </article>
+            </section>
+
+            <section class="ranking card">
+                <div class="card-title">
+                    <h2>Team Rankings</h2>
+                    <a href="#">View All →</a>
+                </div>
+
+                <div class="rank">
+                    <strong>01</strong>
+                    <span>🔵</span>
+                    <b>Manchester City</b>
+                    <em>28 pts</em>
+                </div>
+
+                <div class="rank">
+                    <strong>02</strong>
+                    <span>🔴</span>
+                    <b>Liverpool</b>
+                    <em>26 pts</em>
+                </div>
+
+                <div class="rank">
+                    <strong>03</strong>
+                    <span>🔴</span>
+                    <b>Arsenal</b>
+                    <em>24 pts</em>
+                </div>
+
+                <div class="rank">
+                    <strong>04</strong>
+                    <span>🟣</span>
+                    <b>Aston Villa</b>
+                    <em>22 pts</em>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="cta">
             <div>
-                <span class="icon">📈</span>
-                <h2>Track Your Performance</h2>
-                <p>Keep an eye on your goals, scores and achievements.</p>
+                <span>SPORTZONE</span>
+                <h2>More Sports.<br>More Excitement.</h2>
+                <p>Follow your favorite teams, players and leagues.</p>
+                <button>Get Started →</button>
             </div>
 
-            <div class="score">
-                <strong>24</strong>
-                <span>Matches Played</span>
+            <div class="sports-icons">
+                ⚽ 🏀 🏏 🎾
             </div>
         </section>
 
     </main>
+</div>
 
 </body>
 </html>
